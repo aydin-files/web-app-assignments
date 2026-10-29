@@ -38,6 +38,16 @@ function buttonClickSum(){
     let result = null1 + null2;
     document.getElementById("buttonClickSum").textContent= result
 }
+function buttonClickLength(){
+
+    //Get user input
+    //save it 
+const userInput = document.getElementById("null");
+const userText = userInput.value;
+const characterCount = userText.length;
+document.getElementById("buttonClickLength").textContent= userText + ' is ' + characterCount + ' characters long'
+
+}
 
 window.onload = function () {
     setGreeting();
