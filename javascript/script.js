@@ -48,6 +48,17 @@ const characterCount = userText.length;
 document.getElementById("buttonClickLength").textContent= userText + ' is ' + characterCount + ' characters long'
 
 }
+function buttonClickPassword(){
+    let passwordInput = document.getElementById("null3");
+    let isChecked = document.getElementById("buttonClickPassword").checked;
+
+
+    if (isChecked) {
+        passwordInput.type = "text";
+    } else {
+        passwordInput.type = "password";
+    }
+}
 
 window.onload = function () {
     setGreeting();
