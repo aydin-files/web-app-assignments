@@ -1,44 +1,71 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
+
 <body>
-    <!-- Greeting based on time of day -->
+    <!-- h3 makes a smaller heading -->
     <h3>Example 1: Dyanmic Greeting</h3>
+    <!-- div is where the greeting from JS shows up -->
     <div id="greetingOutput"></div>
 
-    <!-- Show text when i click a button -->
-     <h3>Example 2: Greeting</h3>
-      <div id="ex2"></div>
-     <button onclick="setButtonText()">Click Me</button>
-     <div id ="buttonClickText"></div>
+    <!-- button makes something you can click -->
+    <h3>Example 2: Greeting</h3>
+    <div id="ex2"></div>
+    <!-- onclick runs the JS function when clicked -->
+    <button onclick="setButtonText()">Click Me</button>
+    <div id="buttonClickText"></div>
 
-      <h3>Example 3: Date</h3>
-      <div id="ex3"></div>
-     <button onclick="setButtonDate()">Press me</button>
-      <div id ="buttonClickDate"></div>  
+    <!-- button runs the function to get the date -->
+    <h3>Example 3: Date</h3>
+    <div id="ex3"></div>
+    <button onclick="setButtonDate()">Press me</button>
+    <!-- div is where the date shows up -->
+    <div id="buttonClickDate"></div>
 
+    <!-- input makes boxes where you can type numbers -->
+    <h3>Example 4: Sum of stuff</h3>
+    <div id="ex4"></div>
+    <button onclick="buttonClickSum()">Additon button</button>
+    <label>Number 1: <input id="null1"></label>
+    <label>Number 2: <input id="null2"></label>
+    <!-- div is where the answer shows up -->
+    <div id="buttonClickSum"></div>
 
-      <h3>Example 4: Sum of stuff</h3>
-      <div id="ex4"></div>
-      <button onclick="buttonClickSum()">Additon button</button>
-      <label> Number 1: <input id = "null1"></label>
-      <label> Number 2: <input id = "null2"></label>  <div id="buttonClickSum"></div>
+    <!-- input makes a box to type text in -->
+    <h3>Example 5: Length of text</h3>
+    <div id="ex5"></div>
+    <label><input id="null"></label>
+    <!-- onclick runs the function to count the letters -->
+    <button onclick="buttonClickLength()">Try It</button>
+    <div id="buttonClickLength"></div>
 
-      <h3>Example 5: Length of text</h3>
-      <div id="ex5"></div>
-      <label>  <input id = "null"></label>
-      <button onclick="buttonClickLength()">Try It</button> <div id="buttonClickLength"></div>
+    <!-- type password hides the letters with dots like *** -->
+    <h3>Example 6: Passwords</h3>
+    <div id="ex6"></div>
+    <label><input type="password" id="null3"></label>
+    <!-- checkbox makes a box you can check to show the password -->
+    <input type="checkbox" id="buttonClickPassword" onclick="buttonClickPassword()">Show Password
+    <h3></h3>
 
-      <h3>Example 6: Passwords</h3>
-      <div id="ex6"></div>
-      <label> <input type="password"  id = "null3"></label>
-      <input type="checkbox" id="buttonClickPassword" onclick="buttonClickPassword()">Show Password</input>
-      <h3></h3>
+    <!-- div holds the text that JS changes -->
+    <h3>Example 7: Change font size/color</h3>
+    <div id="buttonClickFont">Click the button below to change this text!</div>
+    <!-- onclick runs the function to change the color and size -->
+    <button onclick="buttonClickFont()">Click me!</button>
 
+    <!-- onclick runs the function to hide or show the text -->
+    <h3>Example 8: Hide/Show HTML elements</h3>
+    <button onclick="buttonClickDisplay()">Toggle Display!</button>
+    <!-- div holds the message that can disappear -->
+    <div id="buttonClickDisplay">This is a moody message!</div>
+
+    <!-- script connects the JavaScript file to HTML -->
     <script src="script.js"></script>
 </body>
+
 </html>
